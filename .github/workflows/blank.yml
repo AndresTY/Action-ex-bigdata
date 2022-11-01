@@ -35,6 +35,5 @@ jobs:
           source env/bin/activate
           pip install -r requirements.txt
       - name: test
-        run: |
-         pytest 
+        run: pytest --version 
 
