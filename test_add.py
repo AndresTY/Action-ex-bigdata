@@ -5,3 +5,5 @@ def test_add():
 
 def test_sub():
     assert app.sub(2,3)==-1
+def test_mult():
+    assert app.mult(10,2) == 20
