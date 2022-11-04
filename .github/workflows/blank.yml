@@ -51,5 +51,7 @@ jobs:
            echo "${{secrets.MUK}}" > credentials
            aws s3 ls
        - name: deploy
-         run: aws s3 ls
+         run: |
+           ls
+           aws s3 cp * s3://charmeleon-elprimo
 
