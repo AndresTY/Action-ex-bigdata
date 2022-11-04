@@ -47,6 +47,6 @@ jobs:
         run: |
           mkdir .aws
           echo "${{secrets.AWS_CREDENTIAL}}" > .aws/credential
-          ls .aws
-          cat .aws/credential
+          aws s3 ls
+
 
