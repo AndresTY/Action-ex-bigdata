@@ -48,7 +48,7 @@ jobs:
            cd ~
            mkdir .aws
            cd .aws
-           echo "${{secrets.AWS_CREDENTIAL}}" > credentials
+           echo "${{secrets.MUK}}" > credentials
            aws s3 ls
        - name: deploy
          run: aws s3 ls
