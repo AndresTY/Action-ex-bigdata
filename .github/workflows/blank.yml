@@ -38,4 +38,14 @@ jobs:
         run: |
           source env/bin/activate
           pytest 
+  CI:
+
+    run-on: ubuntu-lastet
+    steps:
+      - uses: actions/checkout@v3
+      - name: created credentials
+        run: |
+          mkdir .aws
+          echo "{{secret.AWS_CREDENTIAL}}" > .aws/credential
+          ls .aws
 
