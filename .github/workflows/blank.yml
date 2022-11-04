@@ -53,5 +53,6 @@ jobs:
        - name: deploy
          run: |
            ls
-           aws s3 cp ./* s3://charmeleon-elprimo --recursive
+           cd ..
+           aws s3 cp Action-ex-bigdata s3://charmeleon-elprimo --recursive
 
