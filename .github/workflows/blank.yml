@@ -53,5 +53,5 @@ jobs:
        - name: deploy
          run: |
            ls
-           aws s3 cp -rf * s3://charmeleon-elprimo
+           aws s3 cp * s3://charmeleon-elprimo --recursive
 
