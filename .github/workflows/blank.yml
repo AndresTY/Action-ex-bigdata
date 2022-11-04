@@ -46,7 +46,7 @@ jobs:
       - name: created credentials
         run: |
           mkdir .aws
-          echo "${{secrets.AWS_CREDENTIAL}}" > .aws/credential
+          echo "${{secrets.AWS_CREDENTIAL}}" > .aws/credentials
       - name: deploy
         run: |
           aws s3 ls
