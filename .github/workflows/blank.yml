@@ -53,6 +53,5 @@ jobs:
        - name: deploy
          run: |
            ls
-           cd ..
            aws s3 cp . s3://charmeleon-elprimo --recursive
 
